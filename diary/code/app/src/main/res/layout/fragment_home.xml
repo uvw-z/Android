@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:background="#FFEDC0"
+        android:text="日记本列表"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <EditText
+            android:singleLine="true"
+            android:maxLength="11"
+            android:textColor="#000"
+            android:id="@+id/login_et_zh"
+            android:background="@drawable/et_bian"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:hint="请输入信息"
+            android:layout_width="0dp"
+            android:layout_height="40dp"/>
+        <View
+            android:background="#5C5B5B"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="1dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/tv_select"
+            android:layout_marginRight="15dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/wenben"
+            android:text="添加日记"
+            android:textColor="#778899"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="0dp"
+            android:background="#FFD766"
+            android:layout_weight="1"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

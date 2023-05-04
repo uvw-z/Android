@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jiemian">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/iconapp"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UI.ChangeActivity" />
+        <activity android:name=".UI.CaidandetailActivity" />
+        <activity android:name=".UI.AddcaidanActivity" />
+        <activity android:name=".UI.AboutActivity" />
+        <activity android:name=".UI.UserinfoActivity" />
+        <activity android:name=".UI.RegisterActivity" />
+        <!--闪屏进入-->
+        <activity android:name=".UI.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".UI.LoginActivity"></activity>
+        <activity android:name=".UI.MainActivity" />
+    </application>
+
+</manifest>
